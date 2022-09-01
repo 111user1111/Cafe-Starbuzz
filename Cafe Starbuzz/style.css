@@ -1,0 +1,71 @@
+body {
+    background-color: #b5a789; /* задаем цвет бэка */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* указываем шрифт */
+    font-size: small; /* задаем размер текста */
+    margin: 0px; /* убираем поля  */
+}
+
+#header {
+    background-color: #675c47; /* задаем цвет бэка */
+    margin: 10px; /* устанавливаем поля 10 */
+    height: 108px;
+}
+
+#main {
+    background: #efe5d0 url(/images/background.gif) top left ; /* размещаем картинку сверху слева на бэк */
+    font-size: 105%; /* задаем размер текста */
+    padding: 15px; /* задаем отступ */
+    margin: 0px 10px 10px 10px; /* задаем поля сверху 0 везде по 10 */
+    width: 420px; /* задаем точную ширину 420 */
+    float: left; /* задаем чтобы элимент плавал слева */
+}
+
+#sidebar {
+    background: #efe5d0 url(/images/background.gif) bottom right ; /* размещаем картинку справа сверху на бэк */
+    font-size: 105%; /* задаем размер текста */
+    padding: 15px; /* задаем отступ */
+    margin: 0px 10px 10px 470px; /* задаем поля сверху 0 справа и снизу по 10 а слева 470 */
+    text-align: center; /* выравниваем по центру */
+}
+
+#footer {
+    background-color: #675c47; /* задаем цвет бэка */
+    color: #efe5d0; /* задаем цвет текста */
+    text-align: center; /* выраваем по центру */
+    padding: 15px; /* задаем отступ */
+    margin: 10px; /* задаем везде поля 10 */
+    font-size: 90%; /* задаем размер текста */
+    clear: left; /* свойство которое говорит что с левой стороны элемента не может быть никакого плаващего содержимого */
+}
+
+h1 {
+    font-size: 120%; /* задаем размер текста */
+    color: #954b4b; /* задаем цвет текста */
+}
+
+.slogan { color: #954b4b;} /* задаем цвет текста */
+
+.beanheading { 
+    text-align: center; /* размещаем текст по центру */
+    line-height: 1.8em; /* межстрочный интервал */
+}
+
+a:link {
+    color: #b76666;
+    text-decoration: none; /* убираем классическое подчеркивание ссылки */
+    border-bottom: thin dotted #b76666; /* ставим значение подчеркивания точкой и цвет */
+}
+
+a:visited {
+    color: #675c47;
+    text-decoration: none; /* убираем классическое подчеркивание ссылки */
+    border-bottom: thin dotted #675c47;  /* ставим значение подчеркивания точкой и цвет */
+}
+
+#allcontent {
+    width: 800px; /* заключаем весь контент в область шириной 800 */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #675c47;
+    margin: auto;
+}
