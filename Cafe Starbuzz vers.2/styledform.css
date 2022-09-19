@@ -1,0 +1,28 @@
+body {
+    background: #efe5d0 url(/images/background.gif) top left;                         /* задаем фото бэка */
+    margin: 20px;                                                                          /* делаем поля */
+}
+form {
+    display: table;                                                                 /* задаем табличный формат */
+    padding: 10px;                                                                 /* задаем отступ */
+    border: thin dotted #7e7e7e;                                               /* рамка тонкая в точку */
+    background-color: #e1ceb8;                                               
+}
+form textarea {                                                                  /* делаем поле и задаем размер */
+    width: 500px;
+    height: 200px;
+}
+div.lableRow {                                                            /* каждый div с классов tablerow играет роль строки в макете таблицы */
+    display: table-row;
+}
+div.tableRow p {
+    display: table-cell;
+    vertical-align: top;                                                                 /* выравниваем по верхней ячейке */
+    padding: 3px;                                                                 /* добавляем отсуп между строками */
+}
+div.tableRow p:first-child {                                                                 /* выравниваем класс авто */
+    text-align: right;
+}
+p.heading {
+    font-weight: bold;                                                                 /* выделяем жирным шрифтом заголовок */
+}

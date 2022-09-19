@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbuzz Bean Machine</title>
+    <link rel="stylesheet" href="/styledform.css">
+</head>
+<body>
+    <h1>Starbuzz Bean Machine</h1>
+    <h2>Заполните следующую форму и нажмите кнопку "Заказать сейчас", чтобы оформить заказ</h2>
+    <form action="http://starbuzzcoffee.com/processorder.php" method="post">              <!-- добавлем форму сервера куда отправляются данные -->
+<div class="tableRow">                                                                                                     <!-- первая таблица -->
+ <p>
+    Выберите кофе:
+    <select name="beans">                                                                                      <!-- добавлем выпадающий список -->
+        <option value="Смесь">Домашняя смесь</option>
+        <option value="Боливия">Боливия</option>
+        <option value="Гватемала">Гватемала</option>
+        <option value="Кения">Кения</option>
+    </select>
+ </p>
+</div>
+<div class="tableRow">                                                                                               <!-- вторая таблица -->
+ <p>Тип: </p>
+ <p>                                                                             <!-- список с выбором одного переключаемых элементов -->
+        <input type="radio" name="beantype" value="зерна">Кофе в зернах <br>
+        <input checked type="radio" name="beantype" value="молотый">Молотый кофе
+ </p>
+</div>
+<div class="tableRow">                                                                                                 <!-- третья таблица -->
+ <p>
+    Количетсво пакетов: <input type="numer" name="bags" min="1" max="10">                         <!-- добавляем форму для указания количества -->
+ </p>
+</div>
+<div class="tableRow lable">                                                                                          <!-- четвертая таблица -->
+ <p>
+    Доставить к указанной дате: <input type="date" name="date">                                          <!-- добавлем форму для указания даты -->
+ </p>
+</div>
+<div class="tableRow">                                                                                          <!-- пятая таблица -->
+ <p>
+    Дополнительные услуги: <br>
+    <input type="checkbox" name="extras[]" value="Подарочная упаковка"> Подарочная упаковка <br>                  <!-- добавлем флакжки выбора -->
+    <input type="checkbox" name="extras[]" value="Каталог" checked="checked"> Доставка каталога вместе с заказом      <!-- выбран по умолчанию -->
+ </p>
+</div>
+<div class="tableRow">                                                                                           <!-- шестая таблица -->
+ <p class="heading"> Доставить по адресу: </p>
+ <p></p>
+</div>
+<div class="tableRow">
+    <p>Имя:</p>
+    <p><input type="text" placeholder=" Stev Ragger " name="name" value=""> </p>
+</div>
+<div class="tableRow">
+    <p>Город:</p>
+    <p><input type="text" placeholder="Massachus" name="city" value=""> </p>
+</div>
+<div class="tableRow">
+    <p>Страна:</p>
+    <p><input type="text" placeholder="USA" name="state" value=""> </p>
+</div>
+<div class="tableRow">
+    <p>Почтовый индекс:</p>
+    <p><input type="text" placeholder="772701" name="zip" value=""> </p>
+</div>
+<div class="tableRow">
+    <p>Телефон:</p>
+    <p><input type="text" placeholder="033892044" name="phone" value=""> </p>
+</div>
+<div class="tableRow">
+ <p>Ваш комментарий:</p>                                                                            <!-- добавлем многосточное текстовое поле -->
+   <p><textarea name="comments" placeholder="У вас замечатльный кофе, мы его очень любим!" cols="100" rows="10"></textarea></p>
+</div>
+<div class="tableRow">
+    <p></p>
+ <p>
+    <input type="submit" value="Заказать сейчас">                                                     <!-- кнопка отправки формы на сервер -->
+ </p>
+</div>
+</form>
+</body>
+</html>
